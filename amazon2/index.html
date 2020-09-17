@@ -15730,11 +15730,14 @@
             text-decoration: none;
             cursor: pointer;
           }
+          
           #reviewText > img {
-            max-width: 235px !important;
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 160px;
+  width: 235px;
           }
           </style>
-        
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -15743,6 +15746,8 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <p>Extra controls will go here later..</p>
+    <br>
+    <p>Page editor and extra controls scripted by: Joshua Joppie</p>
   </div>
 </div>
         <div class="a-container">
@@ -15828,7 +15833,7 @@
                     data-hook="review-body"
                     class="a-size-base review-text review-text-content"
                   >
-                  <span id="reviewText" contenteditable="true">***REVIEW TEXT BODY***<br><br></span>
+                  <span id="reviewText" contenteditable="true">**paste image here**<br>***REVIEW TEXT BODY***<br>Page editor scripted by: Joshua Joppie<br></span>
                   </span>
                 </div>
                 <div class="a-row a-spacing-none">
